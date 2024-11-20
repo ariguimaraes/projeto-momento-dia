@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra qual é a hora do dia e veja uma imagem representativa do momento.">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <title>Hora do Dia</title>
     <link rel="stylesheet" href="style.css">
+    <title>Hora do Dia</title>
 </head>
 <body onload="carregar()">
     <header>
         <h1>Hora do Dia</h1>
     </header>
-    <section>
-        <div id="msg">
-            Aqui vai aparecer a mensagem...
-        </div>
-        <div id="foto">
-            <img id="imagem" src="imagens/foto-manha.jpg" alt="Foto do Dia">
-        </div>
-    </section>
+    <main>
+        <section class="container">
+            <div id="msg" class="mensagem">
+                <p>Aqui vai aparecer a mensagem...</p>
+            </div>
+            <div id="foto" class="foto">
+                <img id="imagem" src="imagens/foto-manha.jpg" alt="Imagem representativa do dia">
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; Ari Guimarães</p>
+        <div class="container">
+            <p>&copy; 2024 Ari Guimarães</p>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
